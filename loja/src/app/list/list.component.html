@@ -1,0 +1,33 @@
+<div class="conteiner">
+    <div class="content">
+    <div class="title">
+        <h3>Estoque</h3>
+    </div>
+    <div class="">
+        <table class="table" style="width: 100%;">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Codigo</td>
+                    <td>Nome</td>
+                    <td>Valor de Entrada</td>
+                    <td>Valor de Saida</td>
+                    <td>Quantidade</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let produto of produtos; let i = index">
+                    <td>{{produto.id}}</td>
+                    <td>{{produto.cod}}</td>
+                    <td>{{produto.nome}}</td>
+                    <td>{{produto.entrada}}</td>
+                    <td>{{produto.saida}}</td>
+                    <td>{{produto.qtde}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+
+</div>
